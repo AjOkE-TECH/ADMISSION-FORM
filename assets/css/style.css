@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:F08080
+    ;
+    min-height:100vh;
+    padding:40px;
+}
+
+/* FORM DESIGN */
+
+.container{
+    width:500px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#444;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#007bff;
+}
+
+textarea{
+    height:90px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.success{
+    background:#28a745;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    margin-top:15px;
+}
+
+.error{
+    background:#dc3545;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-align:center;
+    margin-top:15px;
+}
+
+/* STUDENT TABLE */
+
+.table-container{
+    width:95%;
+    margin:auto;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th{
+    background:#007bff;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    text-align:center;
+}
+
+.table-img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+/* BUTTONS */
+
+.view-btn{
+    background:#28a745;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:5px;
+}
+
+.delete-btn{
+    background:#dc3545;
+    color:white;
+    padding:8px 15px;
+    text-decoration:none;
+    border-radius:8px;
+}
