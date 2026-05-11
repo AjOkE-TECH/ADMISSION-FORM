@@ -39,6 +39,7 @@ $result = mysqli_query($conn, "SELECT * FROM details");
 
 <td>
 <?php echo $row['firstname'];?>
+<?php echo " "; ?>
 <?php echo $row['lastname']; ?>
 </td>
 
