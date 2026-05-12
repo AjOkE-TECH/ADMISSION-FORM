@@ -100,16 +100,15 @@ button{
 table{
     width:100%;
     border-collapse:collapse;
-    background-color: blue
 }
 
 table th{
-    background-color:#f10ef1;
+    background:#DDA0DD;
     color:white;
     padding:15px;
 }
 
-.table td{
+table td{
     padding:15px;
     border-bottom:1px solid #ddd;
     text-align:center;
