@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Student Portal</title>
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -11,7 +11,7 @@
 
         <div class="logo-box">
 
-            <img src="images/ajoke logo.png" class="logo">
+            <img src="image/ajoke logo.png" class="logo">
 
             <h1>Student Portal</h1>
 

@@ -1,141 +1,258 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
 }
 
-body{
-    background:#dfe6e9;
-    min-height:100vh;
-    padding:40px;
-}
-
-/* FORM DESIGN */
-
-.container{
-    width:500px;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.2);
-}
-
-h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#333;
-}
-
-label{
-    display:block;
-    margin-bottom:6px;
-    font-weight:bold;
-    color:#444;
-}
-
-input,
-select,
-textarea{
-    width:100%;
-    padding:13px;
-    margin-bottom:15px;
-    border:1px solid #ccc;
-    border-radius:10px;
-    outline:none;
-    transition:0.3s;
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-    border-color:#007bff;
-}
-
-textarea{
-    height:90px;
-    resize:none;
-}
-
-button{
-    width:100%;
-    padding:14px;
-    border:none;
-    background:#007bff;
-    color:white;
-    border-radius:10px;
-    font-size:16px;
-    cursor:pointer;
-}
-
-.success{
-    background:#28a745;
-    color:white;
-    padding:12px;
-    border-radius:8px;
-    text-align:center;
-    margin-top:15px;
-}
-
-.error{
-    background:#dc3545;
-    color:white;
-    padding:12px;
-    border-radius:8px;
-    text-align:center;
-    margin-top:15px;
-}
-
-/* STUDENT TABLE */
-
-.table-container{
-    width:95%;
-    margin:auto;
-    background:white;
-    padding:30px;
-    border-radius:20px;
-}
-
-table{
-    width:100%;
-    border-collapse:collapse;
-}
-
-table th{
+body {
     background:#DDA0DD;
-    color:white;
-    padding:15px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
-table td{
-    padding:15px;
-    border-bottom:1px solid #ddd;
-    text-align:center;
+/*  LOGIN PAGE STYLES (index.php)  */
+.container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    min-height: 600px;
 }
 
-.table-img{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    object-fit:cover;
+.left-side {
+    flex: 1;
+    background:indigo;
+    padding: 48px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
 }
 
-/* BUTTONS */
-
-.view-btn{
-    background:#0984e3;
-    color:white;
-    padding:8px 15px;
-    text-decoration:none;
-    border-radius:8px;
-    margin-right:5px;
+.logo-box {
+    text-align: center;
+    max-width: 350px;
 }
 
-.delete-btn{
-    background:#dc3545;
-    color:white;
-    padding:8px 15px;
-    text-decoration:none;
-    border-radius:8px;
+.logo {
+    width: 150px;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+.right-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 32px;
+    background: white;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 32px;
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.input-box {
+    margin-bottom: 24px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: #f8fafc;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: indigo;
+    background: white;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: indigo;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.bottom-links {
+    text-align: center;
+    margin-top: 28px;
+}
+
+.bottom-links a {
+    color: indigo;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.bottom-links p {
+    margin-top: 16px;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* REGISTER PAGE STYLES (register.php) */
+.register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.register-card {
+    background: white;
+    max-width: 520px;
+    width: 100%;
+    padding: 48px 40px;
+    border-radius: 32px;
+}
+
+.register-card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.register-card .subtitle {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.create-btn {
+    width: 100%;
+    padding: 14px;
+    background: #10b981;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+/* Success & Error Messages */
+.success {
+    background: #28a745;
+    color: white;
+    padding: 12px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.error {
+    background: #dc3545;
+    color: white;
+    padding: 12px;
+    border-radius: 16px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Student Table */
+.table-container {
+    width: 95%;
+    margin: 0 auto 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #DDA0DD;
+    color: white;
+    padding: 15px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    color: #334155;
+}
+
+.table-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e2e8f0;
+}
+
+/* Table Action Buttons */
+.view-btn {
+    background: #DDA0DD;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 40px;
+    margin-right: 8px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.delete-btn {
+    background: #ef4444;
+    color: white;
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 500;
 }
