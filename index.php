@@ -11,7 +11,7 @@
 
         <div class="logo-box">
 
-            <img src="images/logo.png" class="logo">
+            <img src="images/ajoke logo.png" class="logo">
 
             <h1>Student Portal</h1>
 
