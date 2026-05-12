@@ -1,104 +1,72 @@
-<?php require_once('submit_student.php'); ?>
-
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>Student Admission Form</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
+<title>Student Portal</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
 <div class="container">
+    <div class="left-side">
 
-<h2>Student Admission Form</h2>
+        <div class="logo-box">
 
-<div id="errorMessages"></div>
+            <img src="images/logo.png" class="logo">
 
-<form id="admissionForm" method="post" enctype="multipart/form-data">
+            <h1>Student Portal</h1>
 
-<div class="form-group">
-<label>Upload Passport</label>
-<input type="file" name="image" id="image">
-</div>
+            <p>
+                Admission Management System
+            </p>
 
-<div class="row">
+        </div>
 
-<div class="form-group">
-<input type="text" name="firstname" id="firstname" placeholder="First Name">
-</div>
+    </div>
+    <div class="right-side">
 
-<div class="form-group">
-<input type="text" name="lastname" id="lastname" placeholder="Last Name">
-</div>
+        <div class="form-container">
 
-</div>
+            <h2>Welcome Back</h2>
 
-<div class="form-group">
-<label>Date of Birth</label>
-<input type="date" name="dob" id="dob">
-</div>
+            <p class="subtitle">
+                Sign in to continue
+            </p>
 
-<div class="form-group">
-<input type="text" name="department" id="department" placeholder="Department">
-</div>
+            <form>
 
-<div class="form-group">
-<select name="gender" id="gender">
-<option value="">Select Gender</option>
-<option>Male</option>
-<option>Female</option>
-</select>
-</div>
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter Email">
+                </div>
 
-<div class="form-group">
-<input type="text" name="state" id="state" placeholder="State of Origin">
-</div>
+                <div class="input-box">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password">
+                </div>
 
-<div class="form-group">
-<input type="text" name="nationality" id="nationality" placeholder="Nationality">
-</div>
+                <button type="submit" class="login-btn">
+                    Sign In
+                </button>
 
-<div class="form-group">
-<textarea name="hobbies" id="hobbies" placeholder="Hobbies"></textarea>
-</div>
+            </form>
 
-<div class="form-group">
-<input type="text" name="parent_name" id="parent_name" placeholder="Parent Name">
-</div>
+            <div class="bottom-links">
 
-<div class="form-group">
-<input type="tel" name="parent_phone" id="parent_phone" placeholder="Parent Phone">
-</div>
+                <a href="#">Forgot Password?</a>
 
-<div class="form-group">
-<textarea name="address" id="address" placeholder="Home Address"></textarea>
-</div>
+                <p>
+                    Don't have an account?
+                    <a href="register.php">Create Account</a>
+                </p>
 
-<button type="submit" name="student_reg">
-Submit Admission
-</button>
+            </div>
 
-<?php if(!empty($success)) { ?>
-<div class="success">
-    <?php echo $success; ?>
-</div>
-<?php } ?>
+        </div>
 
-<?php if(!empty($error)) { ?>
-<div class="error">
-    <?php echo $error; ?>
-</div>
-<?php } ?>
-
-</form>
+    </div>
 
 </div>
-
-<script src="assets/js/script.js"></script>
 
 </body>
+
 </html>
