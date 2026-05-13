@@ -6,7 +6,7 @@
 }
 
 body {
-    background:#DDA0DD;
+    background: #DDA0DD;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -14,7 +14,7 @@ body {
     padding: 20px;
 }
 
-/*  LOGIN PAGE STYLES (index.php)  */
+/* LOGIN PAGE STYLES (index.php) */
 .container {
     display: flex;
     max-width: 1200px;
@@ -26,7 +26,7 @@ body {
 
 .left-side {
     flex: 1;
-    background:indigo;
+    background: indigo;
     padding: 48px 32px;
     display: flex;
     align-items: center;
@@ -61,7 +61,7 @@ body {
 }
 
 .form-container h2 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 8px;
@@ -71,7 +71,7 @@ body {
 .subtitle {
     color: #64748b;
     margin-bottom: 32px;
-    font-size: 0.95rem;
+    font-size: 15px;
     text-align: left;
 }
 
@@ -84,7 +84,7 @@ body {
     margin-bottom: 8px;
     font-weight: 600;
     color: #334155;
-    font-size: 0.9rem;
+    font-size: 15px;
 }
 
 .input-box input {
@@ -92,7 +92,7 @@ body {
     padding: 14px 16px;
     border: 1.5px solid #e2e8f0;
     border-radius: 16px;
-    font-size: 1rem;
+    font-size: 16px;
     transition: all 0.3s ease;
     background: #f8fafc;
 }
@@ -110,7 +110,7 @@ body {
     color: white;
     border: none;
     border-radius: 40px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     margin-top: 8px;
 }
@@ -123,7 +123,7 @@ body {
 .bottom-links p {
     margin-top: 16px;
     color: indigo;
-    font-size: 0.9rem;
+    font-size: 15px;
 }
 
 /* REGISTER PAGE STYLES (register.php) */
@@ -144,7 +144,7 @@ body {
 }
 
 .register-card h2 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
     color: #1e293b;
     margin-bottom: 8px;
@@ -162,7 +162,7 @@ body {
     background: #10b981;
     color: white;
     border-radius: 40px;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
     margin-top: 8px;
 }
@@ -207,7 +207,7 @@ table th {
     color: white;
     padding: 15px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 15px;
 }
 
 table td {
@@ -232,7 +232,7 @@ table td {
     padding: 8px 18px;
     border-radius: 40px;
     margin-right: 8px;
-    font-size: 0.85rem;
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -242,6 +242,6 @@ table td {
     padding: 8px 18px;
     text-decoration: none;
     border-radius: 40px;
-    font-size: 0.85rem;
+    font-size: 15px;
     font-weight: 500;
 }
