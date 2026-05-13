@@ -52,8 +52,6 @@
 
             <div class="bottom-links">
 
-                <a href="#">Forgot Password?</a>
-
                 <p>
                     Don't have an account?
                     <a href="register.php">Create Account</a>
