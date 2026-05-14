@@ -6,7 +6,120 @@
 
 <title>Student Admission Form</title>
 
-<link rel="stylesheet" href="assets/css/style.css">
+<style>
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background:#dfe6e9;
+    padding:40px 15px;
+}
+
+.container{
+    width:100%;
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:indigo;
+    font-size:30px;
+}
+
+.row{
+    display:flex;
+    gap:15px;
+}
+
+.row .form-group{
+    width:100%;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#444;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:13px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:indigo;
+}
+
+textarea{
+    resize:none;
+    height:100px;
+}
+
+input[type="file"]{
+    background:#f5f5f5;
+    padding:10px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:indigo;
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+    font-weight:bold;
+}
+
+.success{
+    margin-top:15px;
+    background:#d4edda;
+    color:#155724;
+    padding:12px;
+    border-radius:6px;
+    text-align:center;
+}
+
+.error{
+    margin-top:15px;
+    background:#f8d7da;
+    color:#721c24;
+    padding:12px;
+    border-radius:6px;
+    text-align:center;
+}
+
+#errorMessages{
+    margin-bottom:15px;
+}
+
+</style>
 
 </head>
 

@@ -14,12 +14,8 @@ $row = mysqli_fetch_assoc($result);
 <head>
 
 <title>Student Profile</title>
-
-<link rel="stylesheet" href="css/style.css">
-
 <style>
-
-*{
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
