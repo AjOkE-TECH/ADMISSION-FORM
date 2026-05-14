@@ -21,8 +21,8 @@ body{
 }
 
 .container{
-    width:100%;
-    max-width:700px;
+    width:60%;
+    
     margin:auto;
     background:#fff;
     padding:35px;
@@ -42,7 +42,7 @@ h2{
 }
 
 .row .form-group{
-    width:100%;
+    width:70%;
 }
 
 .form-group{
@@ -76,7 +76,7 @@ textarea:focus{
 
 textarea{
     resize:none;
-    height:100px;
+    height:80px;
 }
 
 input[type="file"]{
@@ -93,7 +93,6 @@ button{
     font-size:17px;
     border-radius:8px;
     cursor:pointer;
-    transition:0.3s;
     font-weight:bold;
 }
 
