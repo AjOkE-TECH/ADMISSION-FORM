@@ -53,7 +53,9 @@ $result = mysqli_query($conn, "SELECT * FROM details");
 View
 </a>
 
-<a href="delete.php?id=<?php echo base64_encode($row['id']); ?>" class="delete-btn">
+<a href="delete.php?id=<?php echo base64_encode($row['id']); ?>"
+class="delete-btn"
+onclick="return confirm('Are you sure you want to delete this student?')">
 Delete
 </a>
 
