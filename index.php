@@ -26,7 +26,7 @@ if(isset($_POST['login'])){
 
         $_SESSION['user'] = $row['fullname'];
 
-        header("Location: student.php");
+        header("Location: dashboard.php");
 
     }else{
 
