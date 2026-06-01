@@ -1,14 +1,13 @@
 <?php
 
-define('DB_HOST', 'localhost');
-define('DB_USER', 'root');
-define('DB_PASS', 'Olamide010404');
-define('DB_NAME', 'school_db');
-
-$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+$host = "localhost";
+$user = "root";
+$password = "Olamide010404";
+$database = "school_db";
+$conn = mysqli_connect($host, $user, $password, $database);
 
 if(!$conn){
-    die("Connection Failed: " . mysqli_connect_error());
+    die("Database Connection Failed");
 }
 
 ?>
