@@ -1,20 +1,32 @@
 <?php
 require_once('config.php');
 require_once('send_email.php');
+require_once('includes/functions.php');
 
 $success = "";
 $error = "";
 
 if(isset($_POST['register'])){
 
-    $fullname = mysqli_real_escape_string($conn, $_POST['fullname']);
+    $fullname = mysqli_real_escape_string(
+    $conn,
+    cleanInput($_POST['fullname'])
+);
 
-    $email = mysqli_real_escape_string($conn, $_POST['email']);
+$email = mysqli_real_escape_string(
+    $conn,
+    cleanInput($_POST['email'])
+);
 
-    $password = mysqli_real_escape_string($conn, $_POST['password']);
+$password = mysqli_real_escape_string(
+    $conn,
+    cleanInput($_POST['password'])
+);
 
-    $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
-
+$confirm_password = mysqli_real_escape_string(
+    $conn,
+    cleanInput($_POST['confirm_password'])
+);
     if($password != $confirm_password){
 
         $error = "Passwords do not match";
@@ -42,19 +54,8 @@ if(isset($_POST['register'])){
     }
 
 }
+require_once('includes/header.php');
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-
-<title>Create Account</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
 
 <div class="container">
 
@@ -138,22 +139,23 @@ Create Account
 
 </button>
 
-<?php if($success != "") { ?>
+<?php
 
-<div class="success">
-<?php echo $success; ?>
-</div>
+if($success != "")
+{
+    echo successMessage($success);
+}
 
-<?php } ?>
+?>
 
-<?php if($error != "") { ?>
+<?php
 
-<div class="error">
-<?php echo $error; ?>
-</div>
+if($error != "")
+{
+    echo errorMessage($error);
+}
 
-<?php } ?>
-
+?>
 </form>
 
 <div class="bottom-links">
@@ -171,6 +173,6 @@ Already have an account?
 
 </div>
 
-</body>
+</div>
 
-</html>
+<?php require_once('includes/footer.php'); ?>

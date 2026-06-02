@@ -1,4 +1,6 @@
 <?php
+require_once('config.php');
+require_once('includes/functions.php');
 
 session_start();
 
@@ -9,14 +11,11 @@ $error = "";
 if(isset($_POST['login'])){
 
     $email = mysqli_real_escape_string($conn, $_POST['email']);
-
     $password = mysqli_real_escape_string($conn, $_POST['password']);
 
     $query = "SELECT * FROM users
-
-    WHERE email='$email'
-
-    AND password='$password'";
+              WHERE email='$email'
+              AND password='$password'";
 
     $result = mysqli_query($conn, $query);
 
@@ -27,29 +26,18 @@ if(isset($_POST['login'])){
         $_SESSION['user'] = $row['fullname'];
 
         header("Location: dashboard.php");
+        exit();
 
     }else{
 
         $error = "Invalid Email or Password";
 
     }
-
 }
 
+require_once('includes/header.php');
+
 ?>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-
-<title>Student Portal</title>
-
-<link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
 
 <div class="container">
 
@@ -145,4 +133,4 @@ Create Account
 
 </body>
 
-</html>
+</html><?php require_once('includes/footer.php'); ?>
