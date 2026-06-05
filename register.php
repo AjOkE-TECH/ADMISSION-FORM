@@ -162,7 +162,7 @@ if($error != "")
 
 <p>
 Already have an account?
-<a href="index.php">Login</a>
+<a href="admission.php">sign in</a>
 </p>
 
 </div>

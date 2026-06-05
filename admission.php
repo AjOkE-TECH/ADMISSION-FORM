@@ -22,7 +22,6 @@ body{
 
 .container{
     width:60%;
-    
     margin:auto;
     background:#fff;
     padding:35px;
